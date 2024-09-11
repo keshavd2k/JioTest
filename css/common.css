@@ -1,0 +1,939 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, hr, p, figure {
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    border-width: 0;
+    opacity: 1;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+    align-items: normal;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sticking {
+    margin: 0 !important;
+    z-index: 10000 !important;
+}
+
+@media (max-width: 99999px) {
+    .max\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:show {
+        display: none;
+    }
+
+    .xxl\:show {
+        display: none;
+    }
+
+    .xl\:show {
+        display: none;
+    }
+
+    .lg\:show {
+        display: none;
+    }
+
+    .md\:show {
+        display: none;
+    }
+
+    .sm\:show {
+        display: none;
+    }
+
+    .xs\:show {
+        display: none;
+    }
+
+    .xxs\:show {
+        display: none;
+    }
+
+    .tn\:show {
+        display: none;
+    }
+
+    .max\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 2999px) {
+    .xxxl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1919px) {
+    .xxl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1399px) {
+    .xl\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xl\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) {
+    .lg\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lg\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .md\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .md\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .sm\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .xs\:show {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .xs\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .xxs\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .xxs\:hide {
+        display: none;
+    }
+}
+
+@media (max-width: 384px) {
+    .tn\:show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tn\:hide {
+        display: none;
+    }
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+}
+
+
+
+.headroom {
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
+.macbook.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    overflow: hidden;
+  }
+  .macbook .section1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1270px;
+    height: 1039px;
+    min-height: 1039px;
+  }
+  .macbook .placeholder {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 967px;
+    left: 0px;
+    width: 1270px;
+    height: 72px;
+  }
+  .macbook .cover {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 967px;
+    left: 0px;
+    width: 1270px;
+    height: 72px;
+  }
+  .macbook .image {
+    position: absolute;
+    top: 18px;
+    right: 1076px;
+    bottom: 984px;
+    left: 40px;
+    width: 154px;
+    height: 37px;
+  }
+  .macbook .highlight {
+    position: absolute;
+    top: 24px;
+    right: 538px;
+    bottom: 991px;
+    left: 618px;
+    width: 114px;
+    height: 24px;
+    font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  .macbook .highlight1 {
+    position: absolute;
+    top: 24px;
+    right: 221px;
+    bottom: 991px;
+    left: 826px;
+    width: 223px;
+    height: 24px;
+    font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  .macbook .highlight2 {
+    position: absolute;
+    top: 24px;
+    right: 33px;
+    bottom: 991px;
+    left: 1140px;
+    width: 97px;
+    height: 24px;
+    font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  .macbook .image1 {
+    position: absolute;
+    top: 21px;
+    right: 669px;
+    bottom: 988px;
+    left: 571px;
+    width: 30px;
+    height: 30px;
+  }
+  .macbook .image11 {
+    position: absolute;
+    top: 21px;
+    right: 147px;
+    bottom: 988px;
+    left: 1093px;
+    width: 30px;
+    height: 30px;
+  }
+  .macbook .image12 {
+    position: absolute;
+    top: 21px;
+    right: 461px;
+    bottom: 988px;
+    left: 779px;
+    width: 30px;
+    height: 30px;
+  }
+  .macbook .hero_title_box {
+    position: absolute;
+    top: 133px;
+    right: 237.5px;
+    bottom: 822px;
+    left: 237.5px;
+    display: flex;
+    justify-content: center;
+    width: 795px;
+    height: 84px;
+  }
+  .macbook .hero_title {
+    font: 700 70px/1.2 "Roboto", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .macbook .hero_title_span0 {
+    font: 700 1em/1.2 "Roboto", Helvetica, Arial, serif;
+    color: #b42318;
+  }
+  .macbook .hero_title_span1 {
+    font: 700 1em/1.2 "Roboto", Helvetica, Arial, serif;
+  }
+  .macbook .subtitle {
+    position: absolute;
+    top: 235px;
+    right: 251px;
+    bottom: 744px;
+    left: 251px;
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    height: 60px;
+    font: 400 20px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: black;
+    text-align: center;
+  }
+  .macbook .rect {
+    position: absolute;
+    top: 336px;
+    right: 654px;
+    bottom: 133px;
+    left: 262px;
+    width: 354px;
+    height: 570px;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2470588235);
+  }
+  .macbook .image2 {
+    position: absolute;
+    top: 359px;
+    right: 676px;
+    bottom: 490px;
+    left: 284px;
+    width: 310px;
+    height: 190px;
+    outline: 1px solid rgba(0, 0, 0, 0.368);
+    outline-offset: -1px;
+  }
+  
+  .macbook .rect89 {
+    position: absolute;
+    top: 563px;
+    right: 900px;
+    bottom: 454px;
+    left: 284px;
+    width: 86px;
+    height: 22px;
+    background-color: #4c67c6;
+  }
+  .macbook .info78 {
+    position: absolute;
+    top: 567px;
+    right: 911px;
+    bottom: 458px;
+    left: 288px;
+    width: 72px;
+    height: 14px;
+    font: 500 12px/1.16 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  
+  .macbook .subtitle1 {
+    position: absolute;
+    top: 600px;
+    right: 790px;
+    bottom: 416px;
+    left: 284px;
+    width: 196px;
+    height: 23px;
+    font: 500 20px/1.14 "Roboto", Helvetica, Arial, serif;
+    color: black;
+  }
+  .macbook .desc {
+    position: absolute;
+    top: 637px;
+    right: 676px;
+    bottom: 293px;
+    left: 284px;
+    width: 310px;
+    height: 109px;
+    font: 400 12px/1.5 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .image3 {
+    position: absolute;
+    top: 761px;
+    right: 974px;
+    bottom: 266px;
+    left: 284px;
+    width: 12px;
+    height: 12px;
+  }
+  .macbook .image31 {
+    position: absolute;
+    top: 790px;
+    right: 973px;
+    bottom: 237px;
+    left: 285px;
+    width: 12px;
+    height: 12px;
+  }
+  .macbook .image32 {
+    position: absolute;
+    top: 819px;
+    right: 974px;
+    bottom: 208px;
+    left: 284px;
+    width: 12px;
+    height: 12px;
+  }
+  .macbook .info1 {
+    position: absolute;
+    top: 759px;
+    right: 888px;
+    bottom: 265px;
+    left: 304px;
+    width: 378px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .info11 {
+    position: absolute;
+    top: 788px;
+    right: 874px;
+    bottom: 236px;
+    left: 305px;
+    width: 391px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .info12 {
+    position: absolute;
+    top: 817px;
+    right: 793px;
+    bottom: 207px;
+    left: 304px;
+    width: 273px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .rect2 {
+    position: absolute;
+    top: 852px;
+    right: 880px;
+    bottom: 155px;
+    left: 284px;
+    width: 106px;
+    height: 32px;
+    background-color: #dc3333;
+    border-radius: 16px 16px 16px 16px;
+  }
+  .macbook .info {
+    position: absolute;
+    top: 861px;
+    right: 899.5px;
+    bottom: 164px;
+    left: 304.5px;
+    display: flex;
+    justify-content: center;
+    width: 66px;
+    height: 14px;
+    font: 500 12px/1.16 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+  }
+  .macbook .rect1 {
+    position: absolute;
+    top: 336px;
+    right: 265px;
+    bottom: 133px;
+    left: 651px;
+    width: 354px;
+    height: 570px;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    outline: 1px solid black;
+    outline-offset: -1px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.2470588235);
+  }
+  .macbook .image21 {
+    position: absolute;
+    top: 359px;
+    right: 287px;
+    bottom: 490px;
+    left: 673px;
+    width: 310px;
+    height: 190px;
+    outline: 1px solid rgba(0, 0, 0, 0.368);
+    outline-offset: -1px;
+  }
+  .macbook .rect11 {
+    position: absolute;
+    top: 563px;
+    right: 511px;
+    bottom: 454px;
+    left: 673px;
+    width: 86px;
+    height: 22px;
+    background-color: #4c67c6;
+  }
+  .macbook .info2 {
+    position: absolute;
+    top: 567px;
+    right: 521px;
+    bottom: 458px;
+    left: 677px;
+    width: 72px;
+    height: 14px;
+    font: 500 12px/1.16 "Roboto", Helvetica, Arial, serif;
+    color: white;
+  }
+  .macbook .subtitle11 {
+    position: absolute;
+    top: 600px;
+    right: 373px;
+    bottom: 416px;
+    left: 673px;
+    width: 224px;
+    height: 23px;
+    font: 500 20px/1.14 "Roboto", Helvetica, Arial, serif;
+    color: black;
+  }
+  .macbook .desc1 {
+    position: absolute;
+    top: 637px;
+    right: 287px;
+    bottom: 293px;
+    left: 673px;
+    width: 310px;
+    height: 109px;
+    font: 400 12px/1.5 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .image33 {
+    position: absolute;
+    top: 761px;
+    right: 585px;
+    bottom: 266px;
+    left: 673px;
+    width: 12px;
+    height: 12px;
+  }
+  .macbook .image34 {
+    position: absolute;
+    top: 790px;
+    right: 584px;
+    bottom: 237px;
+    left: 674px;
+    width: 12px;
+    height: 12px;
+  }
+  .macbook .image35 {
+    position: absolute;
+    top: 819px;
+    right: 585px;
+    bottom: 208px;
+    left: 673px;
+    width: 12px;
+    height: 12px;
+  }
+  .macbook .info13 {
+    position: absolute;
+    top: 759px;
+    right: 499px;
+    bottom: 265px;
+    left: 693px;
+    width: 78px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .info14 {
+    position: absolute;
+    top: 788px;
+    right: 485px;
+    bottom: 236px;
+    left: 694px;
+    width: 191px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .info15 {
+    position: absolute;
+    top: 817px;
+    right: 404px;
+    bottom: 207px;
+    left: 693px;
+    width: 173px;
+    height: 15px;
+    font: 400 12px/1.25 "Inter", Helvetica, Arial, serif;
+    color: black;
+    text-align: justify;
+  }
+  .macbook .rect21 {
+    position: absolute;
+    top: 852px;
+    right: 491px;
+    bottom: 155px;
+    left: 673px;
+    width: 106px;
+    height: 32px;
+    background-color: #dc3333;
+    border-radius: 16px 16px 16px 16px;
+  }
+  .macbook .info3 {
+    position: absolute;
+    top: 861px;
+    right: 510.5px;
+    bottom: 164px;
+    left: 693.5px;
+    display: flex;
+    justify-content: center;
+    width: 66px;
+    height: 14px;
+    font: 500 12px/1.16 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: center;
+  }
+  .macbook .cover1 {
+    position: absolute;
+    top: 967px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 1270px;
+    height: 72px;
+  }
+  .macbook .image4 {
+    position: absolute;
+    top: 985px;
+    right: 1076px;
+    bottom: 17px;
+    left: 40px;
+    width: 154px;
+    height: 37px;
+  }
+  .macbook .highlight3 {
+    position: absolute;
+    top: 991px;
+    right: 467px;
+    bottom: 24px;
+    left: 772px;
+    display: flex;
+    justify-content: flex-end;
+    width: 31px;
+    height: 24px;
+    font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: right;
+  }
+  .macbook .highlight4 {
+    position: absolute;
+    top: 991px;
+    right: 308px;
+    bottom: 24px;
+    left: 860px;
+    display: flex;
+    justify-content: flex-end;
+    width: 102px;
+    height: 24px;
+    font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    text-align: right;
+  }
+  .macbook .highlight5 {
+    position: absolute;
+    top: 991px;
+    right: 45px;
+    bottom: 24px;
+    left: 1019px;
+    width: 206px;
+    height: 24px;
+    font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: white;
+    letter-spacing: -0.1px;
+  }
+
+
+  
+/* Domestic */
+.hover-container {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black; /* Default text color */
+}
+
+.rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s;
+}
+
+.admissions-rect {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue; /* Original background color of the box */
+    color: white; /* Text color */
+    transition: color 0.3s; /* Transition for text color */
+    /* Ensure the size and style remain consistent */
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image2, .image3, .image31, .image32 {
+    transition: opacity 0.3s;
+}
+
+.subtitle1, .desc, .info1, .info11, .info12, .info {
+    transition: color 0.3s;
+}
+
+.hover-container:hover .rect {
+    background-color: #b42318; /* Change background color on hover */
+}
+
+.hover-container:hover .subtitle1,
+.hover-container:hover .desc,
+.hover-container:hover .info1,
+.hover-container:hover .info11,
+.hover-container:hover .info12 {
+    color: white; /* Change text color to white on hover */
+}
+
+.hover-container:hover .info {
+    color: #b42318 !important; /* Change to red on hover with !important */
+}
+
+.hover-container:hover .apply-now {
+    background-color: white; /* Change background color to white on hover */
+    color: #b42318; /* Change text color to #b42318 on hover */
+}
+
+.hover-container:hover .rect2 {
+    background-color: #ffffff; /* Change to white on hover */
+}
+
+
+
+/* INTERNATIONAL */
+
+.hover-container {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black; /* Default text color */
+}
+
+.rect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s;
+}
+
+.admissions-rect {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue; /* Original background color of the box */
+    color: white; /* Text color */
+    transition: color 0.3s; /* Transition for text color */
+    /* Ensure the size and style remain consistent */
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.image33, .image34, .image35, .image21 {
+    transition: opacity 0.3s;
+}
+
+.subtitle11, .desc1, .info13, .info14, .info15, .info3 {
+    transition: color 0.3s;
+}
+
+.hover-container:hover .rect1 {
+    background-color: #b42318; /* Change background color on hover */
+}
+
+.hover-container:hover .subtitle11,
+.hover-container:hover .desc1,
+.hover-container:hover .info13,
+.hover-container:hover .info14,
+.hover-container:hover .info15,
+.hover-container:hover .info{
+    color: white; /* Change text color to white on hover */
+}
+
+.hover-container:hover .apply-now {
+    background-color: white; /* Change background color to white on hover */
+    color: #b42318; /* Change text color to #b42318 on hover */
+}
+
+.hover-container:hover .info3 {
+    color: #b42318; /* Change to red on hover */
+  }
+
+  .hover-container:hover .rect21 {
+    background-color: #ffffff; /* Change to white on hover */
+  }
+
